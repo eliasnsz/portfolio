@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         gilroy: 'var(--font-gilroy)',
       },
+      maxWidth: {
+        '8xl': '1400px',
+      },
     },
   },
   plugins: [],
