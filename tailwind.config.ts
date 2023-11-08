@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         gilroy: 'var(--font-gilroy)',
       },
+      fontSize: {
+        clamp: 'clamp(1rem, 5vw, 3rem)',
+      },
       maxWidth: {
         '8xl': '1400px',
       },

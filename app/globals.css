@@ -5,7 +5,12 @@
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  color: #fff
+  color: #fff;
+}
+
+*::selection {
+  background-color: #8b5cf6;
+  text-shadow: 0px 0px 45px #ffffffb8;
 }
 
 .bg-grain {
