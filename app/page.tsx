@@ -20,9 +20,9 @@ export default function Home() {
       {/* Hero Section */}
       <main className="grid place-items-center h-full">
         {/* SVG Background Animation */}
-        <HeroPattern className="absolute mb-16 -z-10 pointer-events-none" />
+        <HeroPattern className="absolute w-full mb-16 -z-10 pointer-events-none" />
         {/* Main Title Container */}
-        <Container className="flex flex-col gap-16">
+        <Container className="flex flex-col gap-16 ">
           <div className="text-center flex flex-col gap-4">
             {/* Sob Title */}
             <h6 className="text-stone-400 font-semibold text-sm sm:text-lg">
