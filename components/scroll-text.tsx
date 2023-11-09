@@ -9,7 +9,7 @@ interface Props {
 
 export function ScrollText({ children }: Props) {
   const [scrollOffset, setScrollOffset] = useState(0)
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [windowWidth, setWindowWidth] = useState(0)
 
   const handleScroll = () => {
     setWindowWidth(window.innerWidth)
@@ -18,9 +18,12 @@ export function ScrollText({ children }: Props) {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
+    if (window) {
+      setWindowWidth(window.innerWidth)
+      window.addEventListener('scroll', handleScroll)
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
   }, [])
 

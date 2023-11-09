@@ -12,6 +12,7 @@ export function Navbar() {
         >
           <Image src="/svg/logo.svg" alt="logo" width={32} height={32} />
         </Link>
+        {/* Menu Trigger */}
         <button className="p-2 text-stone-300 border border-stone-300 -ml-[1px] hover:border-violet-500 transition-colors w-14 flex items-center justify-center">
           <TbMenu size={32} strokeWidth={1.4} />
         </button>
