@@ -17,10 +17,14 @@ const config: Config = {
         gilroy: 'var(--font-gilroy)',
       },
       fontSize: {
-        clamp: 'clamp(1rem, 5vw, 3rem)',
+        title: 'clamp(1em, 18px + 3vw, 3.5em)',
+        paragraph: 'clamp(15px, 1vw, 18px)',
       },
       maxWidth: {
         '8xl': '1400px',
+      },
+      screens: {
+        xs: '480px',
       },
     },
   },

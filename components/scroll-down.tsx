@@ -3,11 +3,23 @@ import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { ComponentProps } from 'react'
 
-type Props = ComponentProps<'button'>
+interface Props extends ComponentProps<'button'> {
+  targetId: string
+}
 
-export function ScrollDown(props: Props) {
+export function ScrollDown({ targetId, ...props }: Props) {
+  function scrollToTarget() {
+    document
+      .getElementById(targetId)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   return (
-    <button className={cn('group w-fit', props.className)} {...props}>
+    <button
+      onClick={scrollToTarget}
+      className={cn('group w-fit', props.className)}
+      {...props}
+    >
       <div className="flex flex-col gap-1 items-center">
         <span className="group-hover:text-stone-300 transition-colors text-stone-400 font-extrabold uppercase italic text-xs">
           Scroll

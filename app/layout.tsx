@@ -3,6 +3,7 @@ import './globals.css'
 import { gilroy } from '@/public/fonts/gilroy'
 import { Grain } from '@/components/grain'
 import { Navbar } from '@/components/navbar'
+import { GlobalScrollBar } from '@/components/global-scrollbar'
 
 export const metadata: Metadata = {
   title: 'Elias Souza | Portfolio',
@@ -16,10 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${gilroy.variable} font-gilroy bg-black`}>
+      <body
+        className={`${gilroy.variable} text-paragraph font-gilroy bg-black`}
+      >
         <Navbar />
         <Grain />
         {children}
+        <GlobalScrollBar />
       </body>
     </html>
   )
