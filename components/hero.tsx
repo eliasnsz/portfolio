@@ -17,7 +17,7 @@ export function Hero() {
   return (
     <main className="grid relative place-items-center pt-[16em] pb-[14em] h-full">
       {/* SVG Background Animation */}
-      <HeroPattern className="absolute w-full mb-16 -z-10 pointer-events-none" />
+      <HeroPattern />
       {/* Main Title Container */}
       <Container className="flex flex-col gap-16">
         <div className="text-center flex flex-col gap-4">

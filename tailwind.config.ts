@@ -17,7 +17,7 @@ const config: Config = {
         gilroy: 'var(--font-gilroy)',
       },
       fontSize: {
-        title: 'clamp(1em, 18px + 3vw, 3.5em)',
+        title: 'clamp(1em, 18px + 3vw, 3em)',
         paragraph: 'clamp(15px, 1vw, 18px)',
       },
       maxWidth: {
