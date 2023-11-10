@@ -13,8 +13,7 @@ export function ScrollText({ children }: Props) {
 
   const handleScroll = () => {
     setWindowWidth(window.innerWidth)
-    const scrollY = window.scrollY
-    setScrollOffset(scrollY)
+    setScrollOffset(window.scrollY)
   }
 
   useEffect(() => {
@@ -50,11 +49,7 @@ export function ScrollText({ children }: Props) {
           fill="none"
           stroke="none"
         ></path>
-        <motion.text
-          initial={{ opacity: 0, pathLength: 0 }}
-          animate={{ opacity: 1, pathLength: 1 }}
-          className="font-extrabold sm:font-black z-10 sm:text-[4em] text-[8em]"
-        >
+        <motion.text className="font-extrabold sm:font-black z-10 sm:text-[4em] text-[8em]">
           <textPath
             id="text-curve__path"
             href="#text-curve"

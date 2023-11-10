@@ -4,6 +4,8 @@ import { gilroy } from '@/public/fonts/gilroy'
 import { Grain } from '@/components/grain'
 import { Navbar } from '@/components/navbar'
 import { GlobalScrollBar } from '@/components/global-scrollbar'
+import { MenuContextProvider } from '@/contexts/menu-context'
+import { Menu } from '@/components/menu'
 
 export const metadata: Metadata = {
   title: 'Elias Souza — Portfolio',
@@ -20,10 +22,13 @@ export default function RootLayout({
       <body
         className={`${gilroy.variable} text-paragraph font-gilroy bg-black`}
       >
-        <Navbar />
-        <Grain />
-        {children}
-        <GlobalScrollBar />
+        <MenuContextProvider>
+          <Navbar />
+          <Grain />
+          <Menu />
+          {children}
+          <GlobalScrollBar />
+        </MenuContextProvider>
       </body>
     </html>
   )
