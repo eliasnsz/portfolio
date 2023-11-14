@@ -25,7 +25,7 @@ export function HeroPattern() {
       width="1145.638"
       height="1133.39"
       viewBox="0 0 1145.638 1133.39"
-      className="absolute pointer-events-none -z-20 opacity-[11%] -top-[19rem]"
+      className="absolute w-full min-w-[600px] pointer-events-none -z-20 opacity-[11%] -top-[19rem]"
     >
       <g fill="none">
         <path

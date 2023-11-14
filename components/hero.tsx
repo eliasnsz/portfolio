@@ -15,7 +15,7 @@ const actions = [
 
 export function Hero() {
   return (
-    <main className="grid relative place-items-center pt-[16em] pb-[14em] h-full">
+    <main className="grid overflow-hidden relative place-items-center pt-[16em] pb-[14em] h-full">
       {/* SVG Background Animation */}
       <HeroPattern />
       {/* Main Title Container */}

@@ -28,7 +28,7 @@ export function ScrollText({ children }: Props) {
 
   function getScrollSpeed() {
     if (windowWidth < 480) {
-      return 6.7
+      return 7.4
     }
     if (windowWidth < 1280) {
       return 3
@@ -37,10 +37,10 @@ export function ScrollText({ children }: Props) {
   }
 
   return (
-    <div className="px-0 w-full aspect-video overflow-hidden">
+    <div className="px-0 sm:my-0 my-[4em] overflow-hidden w-full aspect-video">
       <svg
         id="text-curve__container"
-        viewBox="0 -80 760 460"
+        viewBox="0 -80 760 1460"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -49,12 +49,12 @@ export function ScrollText({ children }: Props) {
           fill="none"
           stroke="none"
         ></path>
-        <motion.text className="font-extrabold sm:font-black z-10 sm:text-[4em] text-[8em]">
+        <motion.text className="font-extrabold uppercase z-10 sm:text-[3.2em] text-[8em]">
           <textPath
             id="text-curve__path"
             href="#text-curve"
             fill={stone['300']}
-            startOffset={`${1000 - scrollOffset * getScrollSpeed()}`}
+            startOffset={`${1400 - scrollOffset * getScrollSpeed()}`}
           >
             {children}
           </textPath>

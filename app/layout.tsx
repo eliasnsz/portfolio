@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { gilroy } from '@/public/fonts/gilroy'
-import { Grain } from '@/components/grain'
 import { Navbar } from '@/components/navbar'
 import { GlobalScrollBar } from '@/components/global-scrollbar'
 import { MenuContextProvider } from '@/contexts/menu-context'
@@ -24,7 +23,6 @@ export default function RootLayout({
       >
         <MenuContextProvider>
           <Navbar />
-          <Grain />
           <Menu />
           {children}
           <GlobalScrollBar />
