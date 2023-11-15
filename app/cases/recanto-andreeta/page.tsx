@@ -6,25 +6,41 @@ const caseInfo = {
   year: 2023,
   client: 'Recanto Andreeta',
   website: 'https://recantoandreeta.com.br/',
+  imageUrl: 'https://i.imgur.com/qphPjud.jpg',
 }
 
 export default function RecantoAndreeta() {
   return (
     <div>
       <main className="relative overflow-x-hidden">
+        {/* BackgroundImage */}
+        <div
+          style={{ backgroundImage: `url('${caseInfo.imageUrl}')` }}
+          className="bg-cover bg-center lg:absolute lg:right-0 lg:w-[70%] sticky bg-red-500 w-full lg:h-full 2xl:h-[70vh] 2xl:top-1/2 2xl:-translate-y-1/2 h-[calc(100vh-350px)]"
+        >
+          {/* Gradient */}
+          <div className="lg:bg-gradient-to-r bg-gradient-to-t from-black to-transparent w-full h-full"></div>
+        </div>
+
         {/* Case Main Info */}
-        <Container className="relative px-4 lg:border-x lg:px-0 grid place-items-center 2xl:py-[10em] border-stone-800">
+        <Container className="relative px-4 lg:px-0 lg:py-[12em] grid place-items-center 2xl:py-[14em]">
           {/* BackgroundLines */}
-          <div className="absolute hidden sm:block h-full border-l border-l-stone-800 bg-stone-800 left-1/2" />
-          <div className="flex flex-col pt-[56em] sm:py-[5em] justify-end gap-12 h-[700px] z-10 w-full">
+          <div className="absolute lg:border-x -z-10 border-stone-800 -translate-x-1/2 w-full h-full left-1/2">
+            <div className="m-auto w-px h-full border-l-stone-800 border-l"></div>
+          </div>
+
+          <div className="flex flex-col justify-end gap-12 z-10 w-full">
+            {/* Title */}
             <div className="space-y-2 lg:text-start text-center">
               <p className="text-lg font-semibold text-stone-400">Case</p>
-              <h1 className="italic uppercase leading-tight lg:w-1/2 text-[clamp(2em,32px+3vw,6.5em)] text-stone-200 font-extrabold">
+              <h1 className="italic uppercase leading-tight lg:w-1/2 text-[clamp(3em,48px+3.5vw,8em)] text-stone-200 font-extrabold">
                 {caseInfo.title}
               </h1>
             </div>
 
-            <div className="grid sm:grid-cols-2 text-stone-300 w-full lg:w-[85%] 2xl:w-[65%] gap-8">
+            {/* Info */}
+            <div className="grid sm:grid-cols-2 text-stone-300 w-full lg:w-[85%] 2xl:w-[65%] gap-4 sm:gap-8">
+              {/* Skills */}
               <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Skills
@@ -32,6 +48,7 @@ export default function RecantoAndreeta() {
                 <p className="text-stone-400">{caseInfo.skills.join(', ')}</p>
               </div>
 
+              {/* Year */}
               <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6  ">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Year
@@ -39,6 +56,7 @@ export default function RecantoAndreeta() {
                 <p className="text-stone-400">{caseInfo.year}</p>
               </div>
 
+              {/* Client */}
               <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6  ">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Client
@@ -46,6 +64,7 @@ export default function RecantoAndreeta() {
                 <p className="text-stone-400">{caseInfo.client}</p>
               </div>
 
+              {/* Website */}
               <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6  ">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Website
@@ -62,14 +81,6 @@ export default function RecantoAndreeta() {
             </div>
           </div>
         </Container>
-        {/* BackgroundImage */}
-        <div
-          style={{ backgroundImage: 'url("https://i.imgur.com/qphPjud.jpeg")' }}
-          className="2xl:bg-[5%] bg-[center_40%] bg-[size:1300px] bg-no-repeat w-full lg:h-full h-[50%] 2xl:h-[700px] absolute inset-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-1/3"
-        >
-          {/* Horizontal Gradient */}
-          <div className="lg:bg-gradient-to-r bg-gradient-to-t sm:from-[black_15%] lg:from-[black_45%] from-[black_40%] 2xl:from-[black_15%] to-transparent lg:w-1/2 h-full" />
-        </div>
       </main>
     </div>
   )
