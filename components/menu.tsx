@@ -72,14 +72,14 @@ export function Menu() {
           initial="closed"
           animate={isOpen ? 'open' : 'closed'}
           variants={menuContentVariants}
-          className="flex items-center justify-center gap-4 flex-col h-full "
+          className="flex items-center pt-[6em] justify-center gap-4 flex-col h-full "
         >
           <h6 className="text-xl text-stone-500 font-semibold">Menu</h6>
 
           <ul className="flex flex-col gap-6">
             {navigation.map(({ href, title }) => (
               <Link href={href} key={title}>
-                <li className="text-5xl font-black hover:text-stone-200 hover:drop-shadow-[0px_0px_15px_#ffffff22] transition-all text-stone-400 italic uppercase text-center">
+                <li className="xl:text-6xl text-5xl font-black hover:text-stone-200 hover:drop-shadow-[0px_0px_15px_#ffffff22] transition-all text-stone-400 italic uppercase text-center">
                   {title}
                 </li>
               </Link>

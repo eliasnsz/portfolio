@@ -59,8 +59,8 @@ export function Navbar() {
   const { isOpen, setIsOpen } = useMenu()
 
   return (
-    <nav className="fixed w-full flex justify-center top-12 z-50">
-      <div className="flex w-fit">
+    <nav className="fixed pointer-events-none w-full flex justify-center top-12 z-50">
+      <div className="flex w-fit pointer-events-auto">
         {/*  */}
         <motion.a
           href="/"

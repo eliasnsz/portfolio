@@ -16,14 +16,14 @@ export default function RecantoAndreeta() {
         {/* BackgroundImage */}
         <div
           style={{ backgroundImage: `url('${caseInfo.imageUrl}')` }}
-          className="bg-cover bg-center lg:absolute lg:right-0 lg:w-[70%] sticky bg-red-500 w-full lg:h-full 2xl:h-[70vh] 2xl:top-1/2 2xl:-translate-y-1/2 h-[calc(100vh-350px)]"
+          className="bg-cover bg-center lg:absolute lg:right-0 lg:w-[70%] sticky w-full lg:h-full 2xl:h-[70vh] 2xl:top-1/2 2xl:-translate-y-1/2 h-[calc(100vh-350px)]"
         >
           {/* Gradient */}
           <div className="lg:bg-gradient-to-r bg-gradient-to-t from-black to-transparent w-full h-full"></div>
         </div>
 
         {/* Case Main Info */}
-        <Container className="relative px-4 lg:px-0 lg:py-[12em] grid place-items-center 2xl:py-[14em]">
+        <Container className="relative px-4 lg:px-0 py-[6em] lg:py-[12em] grid place-items-center 2xl:py-[14em]">
           {/* BackgroundLines */}
           <div className="absolute lg:border-x -z-10 border-stone-800 -translate-x-1/2 w-full h-full left-1/2">
             <div className="m-auto w-px h-full border-l-stone-800 border-l"></div>
@@ -57,7 +57,7 @@ export default function RecantoAndreeta() {
               </div>
 
               {/* Client */}
-              <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6  ">
+              <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Client
                 </h6>
@@ -65,7 +65,7 @@ export default function RecantoAndreeta() {
               </div>
 
               {/* Website */}
-              <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6  ">
+              <div className="space-y-1.5 border-b w-full lg:max-w-[390px] border-b-stone-800 min-w-full lg:min-w-fit pb-6">
                 <h6 className="uppercase italic font-extrabold text-2xl">
                   Website
                 </h6>
@@ -82,6 +82,10 @@ export default function RecantoAndreeta() {
           </div>
         </Container>
       </main>
+      <div>
+        <div className='bg-[url("/images/showcases/recanto/mockup.jpg")] bg-cover bg-no-repeat bg-center h-full w-full aspect-video' />
+        <div className='bg-[url("/images/showcases/recanto/mockup2.jpg")] bg-cover bg-no-repeat bg-center h-full w-full aspect-video' />
+      </div>
     </div>
   )
 }
