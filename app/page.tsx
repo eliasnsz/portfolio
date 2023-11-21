@@ -3,7 +3,6 @@ import { AboutMe } from '@/components/about-me'
 import { Hero } from '@/components/hero'
 import { Grain } from '@/components/grain'
 import { Cases } from '@/components/cases'
-import { Container } from '@/components/container'
 
 export default function Home() {
   return (
