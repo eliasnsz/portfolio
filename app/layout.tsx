@@ -5,6 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { GlobalScrollBar } from '@/components/global-scrollbar'
 import { MenuContextProvider } from '@/contexts/menu-context'
 import { Menu } from '@/components/menu'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: {
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           <Menu />
           {children}
+          <Footer />
           <GlobalScrollBar />
         </MenuContextProvider>
       </body>
