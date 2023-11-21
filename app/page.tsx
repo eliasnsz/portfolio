@@ -33,8 +33,8 @@ export default function Home() {
         </button>
       </Container>
 
-      <Container className="mb-[4em]">
-        <footer className="lg:border grid text-base text-stone-400 border-stone-400 lg:divide-stone-400 grid-rows-[min-content_min-content_min-content] lg:grid-cols-[2fr_3fr_2fr] lg:divide-x">
+      <footer className="mb-[4em]">
+        <Container className="lg:border grid text-base text-stone-400 border-stone-400 lg:divide-stone-400 grid-rows-[min-content_min-content_min-content] lg:grid-cols-[2fr_3fr_2fr] lg:divide-x">
           <div className="p-6 lg:order-1 text-center order-3">
             &copy; Todos os direitos reservados.
           </div>
@@ -59,8 +59,8 @@ export default function Home() {
               </a>
             ))}
           </div>
-        </footer>
-      </Container>
+        </Container>
+      </footer>
     </div>
   )
 }
