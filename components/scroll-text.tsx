@@ -28,12 +28,12 @@ export function ScrollText({ children }: Props) {
 
   function getScrollSpeed() {
     if (windowWidth < 480) {
-      return 7.4
+      return 7.9
     }
     if (windowWidth < 1280) {
-      return 3
+      return 3.4
     }
-    return 2.5
+    return 3
   }
 
   return (

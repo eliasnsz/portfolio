@@ -16,14 +16,14 @@ export function AboutMe() {
     >
       <div className="max-w-lg text-center lg:text-start w-full space-y-4 sm:space-y-8">
         <h4 className="uppercase italic text-[clamp(2.5em,20px+3vw,3.2em)] font-extrabold leading-tight text-stone-300">
-          Um pouco <br /> sobre mim
+          A little bit <br /> about me
         </h4>
         <p className="text-stone-400 sm:max-w-none max-w-xs sm:m-0 m-auto font-normal leading-loose">
-          Sou um desenvolvedor apaixonado por tecnologia e design, com 2 anos de
-          experiência em desenvolvimento web e mobile. Estou à disposição para
-          trabalhar em novos projetos e ajudar a transformar suas ideias em
-          realidade. Minha missão é fornecer soluções atraentes e funcionais que
-          superem suas expectativas.
+          I am a developer passionate about technology and design, with 2 years
+          of experience in web and mobile development. I&apos;m available to
+          work on new projects and help bring your ideas to life. My mission is
+          to craft attractive and functional solutions that exceed your
+          expectations.
         </p>
       </div>
       <div className="max-w-lg text-center lg:text-end space-y-4 sm:space-y-8">

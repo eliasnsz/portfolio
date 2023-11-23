@@ -8,7 +8,7 @@ export function Cases() {
       className="flex px-0 sm:px-4 pt-[8em] flex-col items-center gap-12 sm:gap-24"
     >
       <h4 className="uppercase italic text-[clamp(2.5em,20px+3vw,3.2em)] font-extrabold leading-[1.2] text-stone-300">
-        Projetos
+        Cases
       </h4>
       <section className="w-full flex flex-col sm:gap-12 lg:gap-20">
         <CaseCard
