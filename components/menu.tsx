@@ -7,10 +7,14 @@ import { Container } from './container'
 import useMenu from '@/contexts/menu-context'
 
 const navigation = [
-  { href: '/', title: 'Sobre' },
-  { href: '/', title: 'Projetos' },
-  { href: '/', title: 'Contato' },
-  { href: '/', title: 'Github' },
+  { href: '/', title: 'About' },
+  { href: '/cases', title: 'Cases' },
+  { href: '/contact', title: 'Contact' },
+  {
+    href: 'https://www.github.com/eliasnsz',
+    title: 'Github',
+    target: '_blank',
+  },
 ]
 
 const socials = [
@@ -56,7 +60,7 @@ const menuContentVariants: Variants = {
 }
 
 export function Menu() {
-  const { isOpen } = useMenu()
+  const { isOpen, setIsOpen } = useMenu()
 
   return (
     <motion.menu
@@ -77,8 +81,13 @@ export function Menu() {
           <h6 className="text-xl text-stone-500 font-semibold">Menu</h6>
 
           <ul className="flex flex-col gap-6">
-            {navigation.map(({ href, title }) => (
-              <Link href={href} key={title}>
+            {navigation.map(({ href, title, target }) => (
+              <Link
+                onClick={() => setIsOpen(false)}
+                target={target ?? undefined}
+                href={href}
+                key={title}
+              >
                 <li className="xl:text-6xl text-5xl font-black hover:text-stone-200 hover:drop-shadow-[0px_0px_15px_#ffffff22] transition-all text-stone-400 italic uppercase text-center">
                   {title}
                 </li>
@@ -91,6 +100,7 @@ export function Menu() {
               <a
                 className="p-3 hover:shadow-[0px_0px_15px_#ffffff44] transition-shadow group"
                 target="_blank"
+                onClick={() => setIsOpen(false)}
                 rel="noreferer"
                 key={href}
                 href={href}
