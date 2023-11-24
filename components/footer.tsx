@@ -1,10 +1,10 @@
 import Link from 'next/link'
+import { FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa'
+
 import { Container } from './container'
 
-import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
-
-const socials = [
-  { href: 'https://www.linkedin.com/in/eliasnsz/', icon: FaLinkedin },
+export const socials = [
+  { href: 'https://www.github.com/eliasnsz', icon: FaGithub },
   { href: 'https://instagram.com/eliasnsz', icon: FaInstagram },
   { href: 'https://www.youtube.com/@eliasnsz', icon: FaYoutube },
 ]
@@ -13,7 +13,7 @@ export function Footer() {
   return (
     <>
       <Container className="flex items-center py-[8em] sm:py-[12em] justify-center">
-        <Link href="contact" className="relative group">
+        <Link href="/contact" className="relative group">
           <h2 className="text-[clamp(1em,18px+4vw,5em)] hover:drop-shadow-[0px_0px_25px_#ffffff22] whitespace-nowrap font-extrabold text-stone-300 hover:text-stone-100 transition-all">
             {"Let's work together"} <span className="pt-3">&rarr;</span>
           </h2>

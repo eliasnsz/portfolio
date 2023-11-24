@@ -21,7 +21,9 @@ export default function Contact() {
       <Container className="items-start pt-[16em] pb-[8em] sm:pt-[16em] sm:px-0">
         <div className="flex lg:flex-row flex-col lg:items-start gap-12 items-center">
           <div className="flex flex-1 flex-col text-center lg:text-start gap-4">
-            <h6 className="font-semibold text-stone-400 text-xl">Contact</h6>
+            <h6 className="font-semibold text-stone-400 text-sm sm:text-xl">
+              Contact
+            </h6>
             <h2 className="text-title text-center lg:text-start leading-[1.15] uppercase text-stone-200 italic max-w-md font-extrabold">
               Let&apos;s bring your <br className="lg:hidden block" /> idea to
               life!

@@ -5,13 +5,14 @@ import { ComponentProps } from 'react'
 
 interface Props extends ComponentProps<'button'> {
   targetId: string
+  block?: ScrollLogicalPosition
 }
 
-export function ScrollDown({ targetId, ...props }: Props) {
+export function ScrollDown({ targetId, block = 'center', ...props }: Props) {
   function scrollToTarget() {
     document
       .getElementById(targetId)
-      ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      ?.scrollIntoView({ behavior: 'smooth', block })
   }
 
   return (

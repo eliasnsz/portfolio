@@ -1,6 +1,14 @@
 import { CaseCard } from './case-card'
 import { Container } from './container'
 
+export const cases = [
+  {
+    href: 'recanto-andreeta',
+    title: 'Recanto Andreeta',
+    imageUrl: 'https://i.imgur.com/qphPjud.jpeg',
+  },
+]
+
 export function Cases() {
   return (
     <Container
@@ -11,11 +19,14 @@ export function Cases() {
         Cases
       </h4>
       <section className="w-full flex flex-col sm:gap-12 lg:gap-20">
-        <CaseCard
-          href="recanto-andreeta"
-          title="Recanto Andreeta"
-          imageUrl="https://i.imgur.com/qphPjud.jpeg"
-        />
+        {cases.map(({ href, imageUrl, title }) => (
+          <CaseCard
+            key={imageUrl}
+            href={href}
+            title={title}
+            imageUrl={imageUrl}
+          />
+        ))}
       </section>
     </Container>
   )

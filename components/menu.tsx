@@ -1,26 +1,20 @@
 'use client'
 import Link from 'next/link'
-import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import { Variants, motion } from 'framer-motion'
 
 import { Container } from './container'
 import useMenu from '@/contexts/menu-context'
+import { socials } from './footer'
 
 const navigation = [
   { href: '/', title: 'About' },
   { href: '/cases', title: 'Cases' },
   { href: '/contact', title: 'Contact' },
   {
-    href: 'https://www.github.com/eliasnsz',
-    title: 'Github',
+    href: 'https://www.linkedin.com/in/eliasnsz/',
+    title: 'LinkedIn',
     target: '_blank',
   },
-]
-
-const socials = [
-  { href: 'https://www.linkedin.com/in/eliasnsz/', icon: FaLinkedin },
-  { href: 'https://instagram.com/eliasnsz', icon: FaInstagram },
-  { href: 'https://www.youtube.com/@eliasnsz', icon: FaYoutube },
 ]
 
 const menuContainerVariants: Variants = {
@@ -76,7 +70,7 @@ export function Menu() {
           initial="closed"
           animate={isOpen ? 'open' : 'closed'}
           variants={menuContentVariants}
-          className="flex items-center pt-[6em] justify-center gap-4 flex-col h-full "
+          className="flex items-center pt-[5em] xl:pt-[2em] justify-center gap-4 flex-col h-full "
         >
           <h6 className="text-xl text-stone-500 font-semibold">Menu</h6>
 
@@ -100,7 +94,6 @@ export function Menu() {
               <a
                 className="p-3 hover:shadow-[0px_0px_15px_#ffffff44] transition-shadow group"
                 target="_blank"
-                onClick={() => setIsOpen(false)}
                 rel="noreferer"
                 key={href}
                 href={href}
