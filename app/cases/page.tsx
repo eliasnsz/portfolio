@@ -17,7 +17,7 @@ export default function CasesPage() {
       <Grain />
       <HeroPattern />
 
-      <Container className="items-start px-0 sm:pt-[12em] pt-[16em] pb-[8em] sm:px-0">
+      <Container className="items-start px-0 sm:pt-[12em] pt-[16em] sm:px-0">
         <div className="flex flex-col items-center gap-16">
           <div className="text-center space-y-4">
             <h6 className="font-semibold text-sm sm:text-xl text-stone-400">
