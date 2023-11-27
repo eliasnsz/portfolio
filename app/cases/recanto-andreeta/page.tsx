@@ -82,10 +82,6 @@ export default function RecantoAndreeta() {
           </div>
         </Container>
       </main>
-      <div>
-        <div className='bg-[url("/images/showcases/recanto/mockup.jpg")] bg-cover bg-no-repeat bg-center h-full w-full aspect-video' />
-        <div className='bg-[url("/images/showcases/recanto/mockup2.jpg")] bg-cover bg-no-repeat bg-center h-full w-full aspect-video' />
-      </div>
     </div>
   )
 }

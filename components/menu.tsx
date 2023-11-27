@@ -7,7 +7,7 @@ import useMenu from '@/contexts/menu-context'
 import { socials } from './footer'
 
 const navigation = [
-  { href: '/', title: 'About' },
+  { href: '/about', title: 'About' },
   { href: '/cases', title: 'Cases' },
   { href: '/contact', title: 'Contact' },
   {
