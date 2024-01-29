@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   title: 'Contact',
 }
 
-export default function CasesLayout({ children }: { children: ReactNode }) {
+export default function ContactLayout({ children }: { children: ReactNode }) {
   return children
 }
