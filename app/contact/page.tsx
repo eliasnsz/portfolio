@@ -69,7 +69,7 @@ export default function Contact() {
                 className="flex px-4 sm:px-0 justify-between items-center pr-4 group hover:text-white flex-1"
                 href={href}
                 target="_blank"
-                rel="noreferer"
+                rel="noreferrer"
               >
                 <div className="w-fit gap-8 py-8 transition-colors items-baseline flex">
                   <span className="text-base sm:text-2xl font-light">

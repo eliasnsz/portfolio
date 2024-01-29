@@ -19,14 +19,14 @@ export default function RecantoAndreeta() {
           className="bg-cover bg-center lg:absolute lg:right-0 lg:w-[70%] sticky w-full lg:h-full 2xl:h-[70vh] 2xl:top-1/2 2xl:-translate-y-1/2 h-[calc(100vh-350px)]"
         >
           {/* Gradient */}
-          <div className="lg:bg-gradient-to-r bg-gradient-to-t from-black to-transparent w-full h-full"></div>
+          <div className="lg:bg-gradient-to-r bg-gradient-to-t from-black to-transparent w-full h-full" />
         </div>
 
         {/* Case Main Info */}
         <Container className="relative px-4 lg:px-0 py-[6em] lg:py-[12em] grid place-items-center 2xl:py-[14em]">
           {/* BackgroundLines */}
           <div className="absolute lg:border-x -z-10 border-stone-800 -translate-x-1/2 w-full h-full left-1/2">
-            <div className="m-auto w-px h-full border-l-stone-800 border-l"></div>
+            <div className="m-auto w-px h-full border-l-stone-800 border-l" />
           </div>
 
           <div className="flex flex-col justify-end gap-12 z-10 w-full">
@@ -70,7 +70,7 @@ export default function RecantoAndreeta() {
                   Website
                 </h6>
                 <a
-                  rel="noreferer"
+                  rel="noreferrer "
                   target="_blank"
                   href={caseInfo.website}
                   className="block hover:underline text-stone-400"
