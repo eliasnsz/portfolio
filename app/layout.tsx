@@ -22,6 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="GhAs9_JqW7gRz0yeT2YAUApA8WxDCofnAxkcEkvaxXQ"
+        />
+      </head>
       <body
         className={`${gilroy.variable} text-paragraph font-gilroy bg-black`}
       >
