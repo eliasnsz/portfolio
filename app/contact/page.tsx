@@ -4,7 +4,7 @@ import { Grain } from '@/components/grain'
 
 const contactMethods = [
   { name: 'Whatsapp', href: 'https://wa.me/5519971495393' },
-  { name: 'E-mail', href: 'mailto:eliasnsouza1245@gmail.com' },
+  { name: 'E-mail', href: 'mailto:eliasnsz.dev@gmail.com' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/eliasnsz/' },
 ]
 
@@ -38,8 +38,8 @@ export default function Contact() {
                 </h6>
                 <ul className="text-stone-400 text-base xl:text-lg flex flex-col gap-1.5">
                   <li>
-                    <a href="mailto:eliasnsouza1245@gmail.com">
-                      eliasnsouza1245@gmail.com
+                    <a href="mailto:eliasnsz.dev@gmail.com">
+                      eliasnsz.dev@gmail.com
                     </a>
                   </li>
                   <li>
