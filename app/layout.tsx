@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     default: 'Porfólio — Elias Souza',
     template: '%s — Elias Souza',
   },
+  description: 'Crafting unique and unforgettable digital experiences.',
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -21,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <head>
         <meta
           name="google-site-verification"

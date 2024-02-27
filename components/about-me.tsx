@@ -19,7 +19,7 @@ export function AboutMe() {
           A little bit <br /> about me
         </h4>
         <p className="text-stone-400 sm:max-w-none max-w-xs sm:m-0 m-auto font-normal leading-loose">
-          I am a developer passionate about technology and design, with 2 years
+          I am a developer passionate about technology and design, with 2+ years
           of experience in web and mobile development. I&apos;m available to
           work on new projects and help bring your ideas to life. My mission is
           to craft attractive and functional solutions that exceed your
